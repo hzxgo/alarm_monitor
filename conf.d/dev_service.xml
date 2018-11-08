@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration version="1.0">
+    <service>
+        <max_store_months>5</max_store_months>
+        <customer_num>5</customer_num>
+        <job_pool_size>3</job_pool_size>
+    </service>
+    <kafka>
+        <broker>127.0.0.1:9092</broker>
+        <receive_alarm_topic>report_alarm</receive_alarm_topic>
+        <receive_partitions>
+            <is_all>0</is_all>
+            <partition>0</partition>
+            <partition>1</partition>
+        </receive_partitions>
+    </kafka>
+    <redis>
+        <host>127.0.0.1</host>
+        <port>6379</port>
+        <auth>hezhixiong</auth>
+        <db>1</db>
+    </redis>
+    <mysql>
+        <host>127.0.0.1</host>
+        <port>3306</port>
+        <user>root</user>
+        <password>password_here</password>
+        <db_name>monitor_center</db_name>
+    </mysql>
+</configuration>
